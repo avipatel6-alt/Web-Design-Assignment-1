@@ -1,0 +1,293 @@
+/* The following is the formate and style for header and footer */
+/* for ALL pages */
+
+header {
+    background: linear-gradient(135deg, #2f3a2a 0%, #5a7a35 100%);
+    color: #fff;
+    padding: 40px 40px 0; /* 0 bottom so the active tab sits on the edge */
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-family: "Lora", serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+header p {
+    margin: 0 0 28px;
+    color: #e8ecd8;
+    font-size: 20px;
+}
+
+/* nav list: side by side, no bullets */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+}
+
+/* the tabs */
+nav a {
+    display: block;
+    padding: 14px 24px;
+    color: #e8ecd8;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0; /* rounded top corners only */
+    border: 2px solid transparent; /* invisible border to keep the tabs the same size */
+    border-color:#F5F5DC
+}
+
+nav a:hover {
+    background: #f5f5dc96; /* traslucent beige on hover */
+}
+ 
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* brown: 5c4433, olivegreen: 3f5a22, beige: F5F5DC */
+
+/* home page stuff */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #F5F5DC;
+    color: #5c4433;
+    padding: 40px; /* has to be consistent with every page */
+}
+
+main {
+    padding: 50px;
+}
+
+main h2 {
+    font-family: "Lora", serif; /* also has to be consistent with every page */
+    font-size: 1.9rem;
+    color: #5c4433;
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #a17250;   /* the line under each heading */
+}
+
+main p {
+    line-height: 1.6;
+    margin: 0 0 16px;
+}
+
+/* cards */
+
+/* ts will keep all the cards in a  horizontal grid instd of list */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+    gap: 24px;
+    margin-top: 30px;
+}
+
+/* ts will give border and gradient to the cards */
+.card {
+    background: linear-gradient(180deg, #F5F5DC 0%, #3f5a223b 100%);
+    border-top: 4px solid #3f5a22; /* dark green top edge */
+    border-bottom: 4px solid #3f5a22; /* dark green bottom edge */
+    border-radius: 8px;
+    padding: 25px;
+    min-height: 160px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ts will give the text within the cards different color and font to go with the background*/
+.card h3 {
+    font-family: "Lora", serif;
+    color: #2f4a16;
+    margin: 0 0 14px;
+    font-size: 1.2rem;
+}
+
+/* ts will keep the browser form giving p a diffrent margin*/
+.card p {
+    margin: 0;
+}
+
+
+/* animation for when the card is hovered on*/
+.card {
+    text-decoration: none; /* removes link underline */
+    color: inherit; /* stops the text turning link-blue/purple */
+    transition: transform 0.4s; /* smooth transition for the transform property */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* moves the card up */
+}
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* About me stuff */
+
+.about-me {
+    padding: 40px; /* has to be consistent with every page */
+}
+.about-me h2 { /* also has to be consistent with every page */
+    font-family: "Lora", serif; /* also has to be consistent with every page */
+    font-size: 1.9rem;
+    color: #5c4433;
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #a17250;
+}
+
+/* photo and text side by side */
+.img-and-text {
+    display: grid;
+    grid-template-columns: 280px 1fr;/* was 400px, photo is smaller now */
+    gap: 50px;
+    align-items: center; /* text sits level with the middle of the photo */
+    max-width: 1000px; /* block never gets wider than this for destop windows */
+    margin: 0 auto; /* centers the block */
+}
+
+
+/* photo with padding/frame around it */
+.profile-photo {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    object-position: center 20%;
+    padding: 10px; /* space between photo and border */
+    background: #fff; /* makes the padding look like a frame */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.text-about-me {
+    font-size: 1.15rem; /* bigger text to fill the space*/
+    line-height: 1.7;
+    margin: 0 0 18px;
+    max-width: 65ch; /* stops lines getting too wide */
+}
+
+
+/* video with dark frame */
+.about-video video {
+    display: block;
+    width: 45vw; /* 60% of the browser width */
+    aspect-ratio: 16 / 9; /* same box shape before and after play */
+    margin: 0 auto;
+
+}
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* projects page */
+.projects {
+    padding: 40px; /* has to be consistent with every page */
+}
+
+.projects h2 { /* also has to be consistent with every page */
+    font-family: "Lora", serif; /* also has to be consistent with every page */
+    font-size: 1.9rem;
+    color: #5c4433;
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #a17250;
+}
+
+
+/* 2 columns */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card { 
+  background: #fff;
+    border-left: 6px solid #8a9a5b;      /* light green left edge */
+    border-radius: 8px;
+    padding: 24px 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    scroll-margin-top: 20px;             /* keeps spacing when jumped to from the homepage cards */
+    transition: transform 0.4s; /* smooth transition for the transform property */
+}
+.project-card:hover {
+    transform: translateY(-10px); /* moves the card up */
+}
+
+.project-card h3 { /* this represents the heading for each project card */
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    color: #4a6425;
+    margin: 0 0 14px;
+}
+
+.project-card p {/* this represents the description for each project card */
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* Contact page */
+.contact-form { /* ts is for the over all form container */
+    background: #ffffff;
+    border-left: 6px solid #7a9448;
+    border-radius: 8px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+
+.contact-form input, /* ts will give style to the input and text fields */
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b9b9a0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.contact-form button { /* ts will give style to the submit button */
+    margin-top: 18px;
+    padding: 10px 24px;
+    background: #3a4a2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover { /* just a simple color change on hover for the submit button */
+    background: #5a7a35;
+}
+
+.form-success {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: #e6efd8;
+    border: 1px solid var(--green-main);
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* footer DO NOT CHANGE ANYTHING*/
+footer {
+    background: #5a7a35;
+    color: #F5F5DC;
+    padding: 40px; /* has to be consistent with every page */
+    text-align: center;
+}

@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--ts is the first page to be worked on -->
+    <title>Portfolio Home Page</title> 
+    <!--Home page which will have diffrent tabls and nav option fo all other things-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <h1>Hello</h1>
+    <header>
+    <h1>Avi Patel</h1>
+    <p>Bachelor of Information Technology (Hons), Networking & IT Security</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to my Portfolio</h2>  <!-- ADD a border/ line under ts heading -->
+        <p>I'm Avi, a third-year Networking and IT Security student with a passion for cybersecurity. Outside of class, I research futures trading and compete as an Ontario provincial amateur Muay Thai fighter at 175 lb.</p>
+        <p>There is a lot more to me, you can find out more by exploring my projects or contacting me using the following links. Thanks!!!</p>
+
+
+        <h2>What I Do</h2> <!-- ADD a border/ line under ts too -->
+        <section class="cards">
+            <a class="card" href="projects.html#web-design">
+                <h3>Web Design</h3>
+                <p>creating a web page built with HTML5 and CSS</p>
+            </a>
+
+            <a class="card" href="projects.html#networking">
+                <h3>Crafting a trading indicator</h3>
+                <p>Designing and testing day trading strategies using algorithms</p>
+            </a>
+
+            <a class="card" href="projects.html#programming">
+                <h3>Advanced Networking typology</h3>
+                <p>cabling an advanced network for a fictional company</p>
+            </a>
+
+            <a class="card" href="projects.html#programming">
+                <h3>Enterprise management</h3>
+                <p>Designing and implementing an enterprise management system for a fictional company</p>
+            </a>
+    </section>
+    
+
+
+
+</main>
+
+
+</body>
+
+
+<!--The footer shows the contact email and copyright-->
+<footer id="footer">
+<p>Contact: <a href="mailto:Avi.patel@ontraiotechu.ca">Avi.patel@ontraiotechu.ca</a></p>
+<p>© 2026 Avi Patel. All rights reserved.</p>
+</footer>
+
+
 </body>
 </html>
