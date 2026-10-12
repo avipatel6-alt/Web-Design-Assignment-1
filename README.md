@@ -1,8 +1,8 @@
 # Web-Design-Assignment-1
 # Avi Patel – Portfolio (INFR-3120U Assignment 1)
 
-Live site: <GitHub Pages link>
-Repo: <repo link>
+Live site: https://avipatel6-alt.github.io/Web-Design-Assignment-1/
+Repo: https://github.com/avipatel6-alt/Web-Design-Assignment-1`
 
 ## Pages
 Home, About Me, Projects, Contact, thank you
