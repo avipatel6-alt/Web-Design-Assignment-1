@@ -13,6 +13,8 @@ Lecture code form week 1 - 4
 youtube video uploat features used since the introduction video was a big file to be on git
 
 Testing:
-HTML: W3C validator – works
-CSS: W3C CSS validator – works
+W3C Markup Validation Service - no errors found (originally gave an error for having the footer after body tag which was fixed)
+W3C CSS Validation Service - no errors found
+W3C Link Checker - no errors found (originally had an "Accessing links with this URI scheme has been disabled in link checker" I noticed it was because of a type in my email address)
+Accessibility score from WAVE - 7.3/10
 Responsive: tested on phone/tablet/desktop
